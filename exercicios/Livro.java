@@ -14,15 +14,15 @@ public class Livro {
         livro1.ano = 1848;
 
 
-        livro1.Exibir();
+        livro1.exibir();
     }
 
-    public void Exibir()
+    public void exibir()
     {
         System.out.println("\nDetalhes do Livro:\n");
-        System.out.println("Título: " + this.titulo);
-        System.out.println("Autor: " + this.autor);
-        System.out.println("Ano: " + this.ano);
+        System.out.println("Título: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Ano: " + ano);
         System.out.println(" ");
     }
 }
