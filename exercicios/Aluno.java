@@ -13,10 +13,10 @@ public class Aluno
         aluno1.idade = 20;
         aluno1.curso = "Ciência da Computação";
 
-        aluno1.Apresentar();
+        aluno1.apresentar();
     }
 
-    public void Apresentar()
+    public void apresentar()
     {
         System.out.println("\nApresentando aluno:\n");
         System.out.println("Nome: " + nome);
