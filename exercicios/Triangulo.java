@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Triangulo {
     
-    int ladoA;
-    int ladoB;
-    int ladoC;
+    double ladoA;
+    double ladoB;
+    double ladoC;
 
     public static void main(String[] args)
     {
@@ -15,16 +15,16 @@ public class Triangulo {
         Triangulo triangulo1 = new Triangulo();
 
         System.out.println("Digite o lado A do triângulo: ");
-        triangulo1.ladoA = scanner.nextInt();
+        triangulo1.ladoA = scanner.nextDouble();
         System.out.println("Digite o lado B do triângulo: ");
-        triangulo1.ladoB = scanner.nextInt();
+        triangulo1.ladoB = scanner.nextDouble();
         System.out.println("Digite o lado C do triângulo: ");
-        triangulo1.ladoC = scanner.nextInt();
+        triangulo1.ladoC = scanner.nextDouble();
 
         scanner.close();
 
         if (triangulo1.formaTriangulo()) {
-            System.out.println("O triângulo é do tipo: " + triangulo1.ObterTipo());
+            System.out.println("Tipo do triangulo1: " + triangulo1.ObterTipo());
         } else {
             System.out.println("Os lados informados não formam um triângulo.");
         }
