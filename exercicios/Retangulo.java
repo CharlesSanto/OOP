@@ -2,8 +2,8 @@ package exercicios;
 
 public class Retangulo {
     
-    int comprimento;
-    int largura;
+    double comprimento;
+    double largura;
 
     public static void main(String[] args)
     {
@@ -11,12 +11,12 @@ public class Retangulo {
         retangulo1.comprimento = 10;
         retangulo1.largura = 5;
 
-        int area = retangulo1.CalcularArea();
+        double area = retangulo1.calcularArea();
 
         System.out.println("A área do retângulo é: " + area);
     }
 
-    public int CalcularArea() {
-        return this.comprimento * this.largura;
+    public double calcularArea() {
+        return comprimento * largura;
     }
 }
