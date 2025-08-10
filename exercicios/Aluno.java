@@ -19,9 +19,9 @@ public class Aluno
     public void Apresentar()
     {
         System.out.println("\nApresentando aluno:\n");
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Idade: " + this.idade);
-        System.out.println("Curso: " + this.curso);
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Curso: " + curso);
         System.out.println("\n");
     }
 }
