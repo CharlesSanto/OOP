@@ -1,7 +1,5 @@
 package exercicios;
 
-import java.util.Scanner;
-
 public class Triangulo {
     
     double ladoA;
@@ -10,21 +8,13 @@ public class Triangulo {
 
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in);
-
         Triangulo triangulo1 = new Triangulo();
-
-        System.out.println("Digite o lado A do triângulo: ");
-        triangulo1.ladoA = scanner.nextDouble();
-        System.out.println("Digite o lado B do triângulo: ");
-        triangulo1.ladoB = scanner.nextDouble();
-        System.out.println("Digite o lado C do triângulo: ");
-        triangulo1.ladoC = scanner.nextDouble();
-
-        scanner.close();
+        triangulo1.ladoA = 3;
+        triangulo1.ladoB = 4;
+        triangulo1.ladoC = 5;
 
         if (triangulo1.formaTriangulo()) {
-            System.out.println("Tipo do triangulo1: " + triangulo1.ObterTipo());
+            System.out.println("Tipo do triangulo1: " + triangulo1.obterTipo());
         } else {
             System.out.println("Os lados informados não formam um triângulo.");
         }
@@ -37,7 +27,7 @@ public class Triangulo {
             && (ladoB + ladoC > ladoA);
     }
 
-    public String ObterTipo()
+    public String obterTipo()
     {
         if (ladoA == ladoB && ladoB == ladoC)
             {
