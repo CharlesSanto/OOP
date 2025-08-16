@@ -28,6 +28,8 @@ public class Calculadora {
                 break;
         }
 
+        scanner.close();
+
     }
     
     public static String adicao(int num1, int num2)
